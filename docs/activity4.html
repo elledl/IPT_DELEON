@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100&family=Montserrat&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../Elle/IPT_DELEON/docs/images/bg.png'); 
+    background-size: cover;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #d5417a;
+    border-bottom: 2px solid #282a29;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.header img {
+    width: auto; 
+    height: 50px;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px; 
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fbc538;
+    transition: color 0.3s;
+}
+
+.intro-section {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    padding-top: 60px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    margin-right: 50px;
+    padding-right: 20px;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid #282a29;
+    box-shadow: 5px 5px;
+    background-color: #d5417a;
+}
+
+.intro-text {
+    width: 50%;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intro-text h1 {
+    font-size: 60px;
+    text-align: left;
+    line-height: 1;
+    padding-bottom: 10px;
+    color: #282a29;
+    margin: 0;
+}
+
+.intro-text p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #282a29;
+    text-align: left;
+    margin-top: 5px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.lc-btn {
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    background-color: #fbc538;
+    color: #282a29;
+    border: 2px solid #282a29;
+    box-shadow: 3px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lc-btn:hover {
+    background-color: #d5417a;
+    color: #fbc538;
+    border: 2px solid #282a29;
+    box-shadow: 3px 3px #282a29 ;
+    transition: color 0.3s;
+}
+
+.socials-icons {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.socials-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    margin: 0px 0px;
+    color: #282a29;
+    font-size: 25px; 
+
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.socials-icons i:hover {
+    color: #fbc538;
+}
+  
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="../Elle/IPT_DELEON/docs/images/lg.png" alt="logo">
+        <nav class="navbar">
+            <a href="/">HOME</a>
+            <a href="/">SERVICES</a>
+            <a href="/">ABOUT ME</a>
+        </nav>
+    </header>   
+
+    <section class="intro-section">
+        <div class="image-container">
+            <img src="../Elle/IPT_DELEON/docs/images/el.png" alt="Profile" class="profile-photo">
+        </div>
+        <div class="intro-text">
+            <h1>Hello, I'm Elle!👋</h1>
+            <p>I’m a self-taught Graphic Designer with experience in creating<br>
+                poster designs, social media content, publication materials, and<br>
+                advertisements. I have a strong background in both digital and<br>
+                print media.<br><br>
+
+                If you're looking for someone consistent in creating impactful<br>
+                materials for your social media accounts.</p>
+                <button class="lc-btn" onclick="scrollToContact()">LET'S CONNECT!</button>
+        <div class="socials-icons">
+            <a href="https://www.facebook.com/xmin0" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div> 
+    </div>
+    </section>
+
+</body>
+</html>
