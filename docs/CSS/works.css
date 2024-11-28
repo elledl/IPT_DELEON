@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #d5417a;
+    border-bottom: 2px solid #282a29;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.header img {
+    height: 50px;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px; 
+    transition: color 0.3s;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    color: #fbc538;
+}
+
+.works-section {
+    padding: 200px 50px 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .overlay {
+    position: absolute; 
+    bottom: -100px; 
+    left: 0; 
+    width: 100%; 
+    height: 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(to top, #d5417a, transparent); 
+    transition: bottom 0.3s ease;
+}
+
+.card .overlay h2, a {
+    margin: 0; 
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none;
+}
+
+.card .overlay h2:hover {
+    color: #fbc538;
+}
+
+.card:hover .overlay {
+    bottom: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
